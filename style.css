@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left-r.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    padding: 0 50px;
+    
+   
+}
+
+
+
+.navBar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: calc(100% - 100px);
+    left: 50px;
+    z-index: 2;
+    
+    
+
+    
+}
+
+.navBar ul li{
+    list-style-type: none;
+    background-color: #000000;
+}
+
+.navBar a{
+ text-decoration: none;
+ color: white;
+ font-family: 'REM', sans-serif;
+}
+
+.navBar h1{
+    font-size: 22px;
+    border-right: 2px solid white;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.smooth-scroll {
+    transition: scroll-behavior 0.5s ease-in-out;
+  }
+
+.sections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+    
+   
+
+}
+
+.sections a{
+    transition: 0.3s;
+}
+
+.sections a:hover{
+    border-left: 1px solid white;
+    padding-left: 5px;
+}
+
+
+.main{
+    color: white;
+    font-family: 'REM', sans-serif;
+    display: flex;
+    height: 100vh;
+    
+    
+}
+
+
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+.main-left{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+
+    animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+    
+      
+}
+
+.main-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+
+.main-right .linea{
+    width: 80%; /* Ancho de la línea (puedes ajustarlo según tus necesidades) */
+            height: 1px; /* Grosor de la línea */
+            background-color: #ffffff; 
+            animation: tracking-in-expand 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.about-container{
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+
+    font-family: 'REM', sans-serif;
+    
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin-right: 300px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.about-text h1{
+    font-size: 30px;
+}
+
+@keyframes moverA {
+    0% { transform: rotate(30deg); }
+
+    50% { transform: rotate(390deg); }/* El cuadrado se moverá 100px hacia la derecha */
+}
+
+
+.about-container #a{
+    position: absolute;
+    font-size: 200px;
+    right: 10%;
+    transform: rotate(30deg);
+    white-space: nowrap;
+    animation: moverA 10s infinite;
+    
+}
+
+.about-container #b{
+    position: absolute;
+    font-size: 200px;
+    right: 20%;
+    transform: rotate(30deg);
+    white-space: nowrap;
+    
+}
+
+#btn-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    color:#ffffff;
+    text-decoration: none;
+    width: 100px;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+#btn-contact:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid white;
+    
+}
+
+#tools{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffffff;
+
+    font-family: 'REM', sans-serif;
+}
+
+.tools-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+#inv{
+    filter: invert(1);
+}
+
+.tool img{
+    width: 100px;
+}
+
+#work{
+    color: white;
+    font-family: 'REM', sans-serif;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.work-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 15px;
+}
+
+.galeria img{
+    width: 496px;
+    max-height: 245px;
+    
+}
+
+img.slide-in {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+.btn-galery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-galery:active{
+    background-color: #000000;
+}
+
+.text-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+   
+}
+
+#contact{
+    color: white;
+    font-family: 'REM', sans-serif;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-right img{
+    max-width: 30px;
+}
+
+.contact-container input{
+    width: 500px;
+}
+
+#name{
+    height: 40px;
+}
+
+#email{
+    height: 40px;
+}
+
+#message{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid white;
+
+    height: 100px;
+    font-family: 'REM', sans-serif;
+    width: 500px;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+.contact-left button{
+    width: 100px;
+    font-family: 'REM', sans-serif;
+    border: 1px solid white;
+    background-color: #000000;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact-left button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contact-left input{
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid white;
+    padding-left: 10px;
+}
+
+.contact-left input::placeholder{
+    font-family: 'REM', sans-serif;
+ 
+}
+
+
+/* Oculta las secciones al principio */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Revela las secciones cuando llegan al área visible del navegador */
+  .reveal-section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+

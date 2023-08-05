@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+</head>
+<body>
+    <section>
+    <div class="navBar">
+        <h1><a href="index.html">SalvadorCisneros</a></h1>
+        <ul class="sections">
+            <li><a href="#about" class="smooth-scroll" onclick="scrollToSection(event)">About</a></li>
+            <li><a href="#tools" class="smooth-scroll" onclick="scrollToSection(event)">Tools</a></li>
+            <li><a href="#work" class="smooth-scroll" onclick="scrollToSection(event)">Work</a></li>
+            <li><a href="#contact" class="smooth-scroll" onclick="scrollToSection(event)">Contact</a></li>
+        </ul>
+    </div>
+    <section class="main">
+
+        <div class="main-left">
+            <h1>Hola soy Salvador, Programador FrontEnd</h1>
+        </div>
+
+        <div class="main-right">
+            <div class="linea">
+
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="reveal-section" id="about"> 
+
+    <div class="about-container">
+        <span id="a">?</span>
+        <span id="b">¿</span>
+
+        <div class="about-text">
+            <h1>¿Quien Soy?</h1>
+            <p>Estudiante de programacion que encontro su pasion en el desarrollo web.</p>
+            <p>Soy una persona que disfruta encontrar maneras simples, eficientes y ademas intuitivas para resolver problemas.</p>
+            <p>Actualmente me encuentro estudiando en el Instituto Tecnologio de Estudios Superiores de Monterrey (ITESM), fuera de eso me encuentro libre y dispuesto a escuchar cualquier oferta. </p>
+            <p>Sientete libre de ponerte en contacto conmigo. </p>
+
+            <a id="btn-contact" href="">Contacto</a>
+        </div>
+        
+
+
+    </div>
+</section>
+
+<section class="reveal-section" id="tools">
+    <h1>Mis herramientas y mis habilidades</h1>
+
+    <div class="tools-icons">
+        <div class="tool">
+            <img id="inv" src="src/html.webp" alt="">
+        </div>
+        <div class="tool">
+            <img id="inv" src="src/css.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/js.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/react.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/pg.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/git.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/wp.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/api.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/github.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/jq.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/vs.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/php.webp" alt="">
+        </div>
+        <div class="tool">
+            <img src="src/python.webp" alt="">
+        </div>
+
+    </div>
+
+    <p>Siempre trato de seguir mejorando y aprender nuevas habilidades por lo que espero seguir ampliando esta seccion siempre que me sea posible.</p>
+
+</section>
+
+<section class="reveal-section" id="work">
+    <h1>Algunos de los trabajos que realizado:</h1>
+
+    
+        
+        <div class="work-container">
+        <div class="galeria">
+            <button class="btn-galery" onclick="cambiarImagen(-1)"><i class="material-icons">chevron_left</i></button>
+            <img id="imagenActual" class="slide-in" src="src/ternium1.webp" alt="Imagen 1">
+        
+        
+        <button class="btn-galery" onclick="cambiarImagen(1)"> <i class="material-icons">chevron_right</i></button>
+
+        </div>
+
+        <div class="text-work">
+            <h2>Ternium Employee Management</h2>
+            <p>Desarrollar un sistema web que permita agilizar y optimizar el manejo y gestión de información por parte del área de recursos humanos de la empresa “TERNIUM” la cual permitirá a los encargados una mejor precisión a la hora de la toma de datos  con respecto a los empleados de la misma.</p>
+
+        </div>
+        
+    </div>
+
+    <div class="work-container">
+        
+
+        <div class="text-work">
+            <h2>Caintra</h2>
+            <p>Pagina principal de <a href="https://www.caintra.org.mx/">Caintra</a> la cual me encarge de las secciones principales como: ¿Quienes somos?, Contacto, Transforma, etc. Pagina donde apesar de no ser muy compleja tecnicamente, es extensa, ademas de requerir de servicio autoadministrable el cual fue realizado mediante Wordpress. </p>
+
+        </div>
+
+        <div class="galeria">
+            <button class="btn-galery"  onclick="cambiarImagenGaleria2(-1)"><i class="material-icons">chevron_left</i></button>
+            <img class="slide-in" id="imagenActualGaleria2" src="src/caintra1.webp" alt="Imagen 1">
+        
+        
+        <button class="btn-galery" onclick="cambiarImagenGaleria2(1)"> <i class="material-icons">chevron_right</i></button>
+
+        </div>
+        
+    </div>
+
+    <div class="work-container">
+        <div class="galeria">
+            <button id="btn-galery" onclick="cambiarImagenGaleria3(-1)"><i class="material-icons">chevron_left</i></button>
+            <img class="slide-in" id="imagenActualGaleria3" src="src/iepam1.webp" alt="Imagen 1">
+        
+        
+        <button id="btn-galery" onclick="cambiarImagenGaleria3(1)"> <i class="material-icons">chevron_right</i></button>
+
+        </div>
+
+        <div class="text-work">
+            <h2>IEPAM</h2>
+            <p>Pagina con la finalidad de ayudar a personas de la 3era edad a seguir aprebndiendo de las nuevas tecnologias mediante cursos y juegos</p>
+
+        </div>
+        
+    </div>
+
+</section>
+
+<section class="reveal-section" id="contact">
+    <h1>Contactame</h1>
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <input id="name" type="text" placeholder="Name">
+            <input id="email" type="email" placeholder="Email">
+            <textarea id="message" name="texto" rows="4" cols="50" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+    
+        </div>
+    
+        <div class="contact-right">
+            <a href="https://www.linkedin.com/in/salvador-cisneros-1b1483234/" target="_blank"><img src="src/ln.webp" alt=""></a>
+    
+        </div>  
+
+    </div>
+
+    
+    
+    
+
+
+
+</section>
+
+<script>
+
+
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const targetId = event.target.getAttribute("href");
+  const targetElement = document.querySelector(targetId);
+  targetElement.scrollIntoView({ behavior: "smooth" });
+}
+
+
+
+    // Lista de las imágenes que deseas mostrar en la galería
+const imagenes = ["src/ternium1.webp", "src/ternium2.webp", "src/ternium3.webp", "src/ternium4.webp", "src/ternium5.webp"];
+let indiceActual = 0;
+
+
+
+function cambiarImagen(direccion) {
+  indiceActual += direccion;
+
+  // Verificar si alcanzamos el final o inicio de la lista de imágenes
+  if (indiceActual < 0) {
+    indiceActual = imagenes.length - 1;
+  } else if (indiceActual >= imagenes.length) {
+    indiceActual = 0;
+  }
+
+  // Obtener el elemento de la imagen actual
+  const imagenActual = document.getElementById("imagenActual");
+
+  // Aplicar efecto de deslizamiento
+  imagenActual.style.opacity = 0;
+  imagenActual.style.transform = "translateX(" + (direccion > 0 ? "-" : "") + "50px)";
+
+  // Esperar a que termine la animación (0.5 segundos) antes de cambiar la imagen
+  setTimeout(function() {
+    // Cambiar la imagen y quitar el efecto de deslizamiento
+    imagenActual.src = imagenes[indiceActual];
+    imagenActual.style.opacity = 1;
+    imagenActual.style.transform = "translateX(0)";
+  }, 200);
+}
+
+
+const imagenesGaleria2 = ["src/caintra1.webp", "src/caintra2.webp", "src/caintra3.webp", "src/caintra4.webp"];
+let indiceActualGaleria2 = 0;
+
+function cambiarImagenGaleria2(direccion) {
+  indiceActualGaleria2 += direccion;
+
+  if (indiceActualGaleria2 < 0) {
+    indiceActualGaleria2 = imagenesGaleria2.length - 1;
+  } else if (indiceActualGaleria2 >= imagenesGaleria2.length) {
+    indiceActualGaleria2 = 0;
+  }
+
+  const imagenActualGaleria2 = document.getElementById("imagenActualGaleria2");
+
+
+  // Aplicar efecto de deslizamiento
+  imagenActualGaleria2.style.opacity = 0;
+  imagenActualGaleria2.style.transform = "translateX(" + (direccion > 0 ? "-" : "") + "50px)";
+
+  // Esperar a que termine la animación (0.5 segundos) antes de cambiar la imagen
+  setTimeout(function() {
+    // Cambiar la imagen y quitar el efecto de deslizamiento
+    imagenActualGaleria2.src = imagenesGaleria2[indiceActualGaleria2];
+    imagenActualGaleria2.style.opacity = 1;
+    imagenActualGaleria2.style.transform = "translateX(0)";
+  }, 200);
+}
+
+const imagenesGaleria3 = ["src/iepam1.webp", "src/iepam2.webp", "src/iepam3.webp", "src/iepam4.webp","src/iepam5.webp","src/iepam6.webp","src/iepam7.webp","src/iepam8.webp","src/iepam9.webp"];
+let indiceActualGaleria3 = 0;
+
+function cambiarImagenGaleria3(direccion) {
+  indiceActualGaleria3 += direccion;
+
+  if (indiceActualGaleria3 < 0) {
+    indiceActualGaleria3 = imagenesGaleria3.length - 1;
+  } else if (indiceActualGaleria3 >= imagenesGaleria3.length) {
+    indiceActualGaleria3 = 0;
+  }
+
+  const imagenActualGaleria3 = document.getElementById("imagenActualGaleria3");
+  imagenActualGaleria3.style.opacity = 0;
+  imagenActualGaleria3.style.transform = "translateX(" + (direccion > 0 ? "-" : "") + "50px)";
+
+  // Esperar a que termine la animación (0.5 segundos) antes de cambiar la imagen
+  setTimeout(function() {
+    // Cambiar la imagen y quitar el efecto de deslizamiento
+    imagenActualGaleria3.src = imagenesGaleria3[indiceActualGaleria3];
+    imagenActualGaleria3.style.opacity = 1;
+    imagenActualGaleria3.style.transform = "translateX(0)";
+  }, 200);
+}
+
+function revealSectionsOnScroll() {
+  const sections = document.querySelectorAll(".reveal-section");
+
+  function revealSection() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight * 0.5) {
+        section.classList.add("reveal");
+      }
+    });
+  }
+
+  // Llama a revealSection en la carga inicial
+  revealSection();
+
+  // Llama a revealSection cuando el usuario haga scroll
+  window.addEventListener("scroll", revealSection);
+}
+
+// Iniciar la función cuando la página se carga completamente
+window.addEventListener("load", revealSectionsOnScroll);
+
+
+
+</script>
+
+    
+</body>
+</html>
