@@ -26,14 +26,43 @@ body{
     z-index: 2;
     
     
+    
 
     
 }
 
+.sections{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
 .navBar ul li{
+    display: flex;
     list-style-type: none;
     background-color: #000000;
+    align-items: center;
 }
+
+#menu{
+    display: none;
+
+
+}
+
+#close-menu{
+    display: none;
+    gap: 30px;
+}
+
+#sec{
+    display: flex;
+    top: 100%;
+    gap: 50px;
+   
+}
+
+
 
 .navBar a{
  text-decoration: none;
@@ -58,6 +87,7 @@ body{
     justify-content: center;
     flex-direction: row;
     gap: 35px;
+
     
    
 
@@ -236,6 +266,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    
 }
 
 .work-container{
@@ -243,8 +274,16 @@ body{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    
+
+    
 
 }
+
+.work-container:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
 .galeria{
     display: flex;
@@ -389,4 +428,89 @@ img.slide-in {
   
 
 
+  @media screen and (max-width: 768px) {
+
+   
+
+    #sec{
+        display: none;
+        text-align: center;
+        top: 5px;
+        align-items: center;
+        background-color: #000000;
+        z-index: 2;
+        border-bottom: 1px solid white;
+        padding-bottom: 25px;
+        border-left: 1px solid white;
+        padding-left: 10px;
+        transition: opacity 0.3s ease-in-out;
+        
+    }
+
+  
+
+    .sections a:hover{
+        border: 0;
+        padding: 0;
+    }
+
+    
+    
+
+    #menu{
+        display:flex;
+        
+    }
+
+    #close-menu{
+        display:none;
+
+
+    }
+
+      
+
+
+    .about-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .about-container #a{
+        display: none;
+        
+    }
+    
+    .about-container #b{
+        display: none;
+        
+    }
+
+    .work-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        
+    
+    }
+
+    .work-container:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+
+
+  }
 

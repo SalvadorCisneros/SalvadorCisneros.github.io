@@ -12,10 +12,18 @@
     <div class="navBar">
         <h1><a href="index.html">SalvadorCisneros</a></h1>
         <ul class="sections">
-            <li><a href="#about" class="smooth-scroll" onclick="scrollToSection(event)">About</a></li>
-            <li><a href="#tools" class="smooth-scroll" onclick="scrollToSection(event)">Tools</a></li>
-            <li><a href="#work" class="smooth-scroll" onclick="scrollToSection(event)">Work</a></li>
-            <li><a href="#contact" class="smooth-scroll" onclick="scrollToSection(event)">Contact</a></li>
+            
+            <li><a  id="menu" onclick="menu(1)" ><i class="material-icons">dehaze</i></a></li>
+            
+            <div id="sec">
+                <li><a  id="close-menu" onclick="menu(0)"  ><i class="material-icons">close</i></a></li>
+                <li ><a href="#about" class="smooth-scroll" onclick="scrollToSection(event)">About</a></li>
+                <li ><a href="#tools" class="smooth-scroll" onclick="scrollToSection(event)">Tools</a></li>
+                <li ><a href="#work" class="smooth-scroll" onclick="scrollToSection(event)">Work</a></li>
+                <li ><a href="#contact" class="smooth-scroll" onclick="scrollToSection(event)">Contact</a></li>
+
+            </div>
+            
         </ul>
     </div>
     <section class="main">
@@ -128,13 +136,6 @@
     </div>
 
     <div class="work-container">
-        
-
-        <div class="text-work">
-            <h2>Caintra</h2>
-            <p>Pagina principal de <a href="https://www.caintra.org.mx/">Caintra</a> la cual me encarge de las secciones principales como: ¿Quienes somos?, Contacto, Transforma, etc. Pagina donde apesar de no ser muy compleja tecnicamente, es extensa, ademas de requerir de servicio autoadministrable el cual fue realizado mediante Wordpress. </p>
-
-        </div>
 
         <div class="galeria">
             <button class="btn-galery"  onclick="cambiarImagenGaleria2(-1)"><i class="material-icons">chevron_left</i></button>
@@ -144,6 +145,15 @@
         <button class="btn-galery" onclick="cambiarImagenGaleria2(1)"> <i class="material-icons">chevron_right</i></button>
 
         </div>
+        
+
+        <div class="text-work">
+            <h2>Caintra</h2>
+            <p>Pagina principal de <a href="https://www.caintra.org.mx/">Caintra</a> la cual me encarge de las secciones principales como: ¿Quienes somos?, Contacto, Transforma, etc. Pagina donde apesar de no ser muy compleja tecnicamente, es extensa, ademas de requerir de servicio autoadministrable el cual fue realizado mediante Wordpress. </p>
+
+        </div>
+
+        
         
     </div>
 
@@ -316,6 +326,50 @@ function revealSectionsOnScroll() {
 
 // Iniciar la función cuando la página se carga completamente
 window.addEventListener("load", revealSectionsOnScroll);
+
+
+
+
+function menu(st) {
+    const menu = document.getElementById('menu');
+    const close = document.getElementById('close-menu');
+    const ul = document.getElementById('sec');
+
+    
+
+    if (st == 0){
+        menu.style.display= "flex";
+
+        menu.style.border = "none"
+        menu.style.position = "relative"
+        close.style.display = "none"
+        ul.style.display = "none"
+    
+
+    } else {
+        
+        menu.style.display= "none";
+
+        close.style.display = "flex";
+        
+        ul.style.display = "flex"
+        ul.style.flexDirection = "column"
+        ul.style.position = "absolute";
+        ul.style.alignContent = "center";
+        ul.style.justifyContent = "center";
+        ul.style.textAlign = "center";
+    }
+
+       
+        
+        
+
+    }
+
+
+
+    
+   
 
 
 
