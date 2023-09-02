@@ -9,6 +9,7 @@
 body{
     background-color: #e9e9e9;
     padding: 0 50px;
+    margin-bottom: 50px;
     
    
 }
@@ -222,7 +223,7 @@ body{
     align-items: center;
     justify-content: center;
 
-    color:#ffffff;
+    color:#555553;
     text-decoration: none;
     width: 100px;
     margin-top: 50px;
@@ -230,7 +231,7 @@ body{
 }
 
 #btn-contact:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #aaa9a3;
     color: #e9e9e9;
     border: 1px solid white;
     
